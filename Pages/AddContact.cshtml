@@ -1,0 +1,15 @@
+@page
+@model AddContactModel
+@{
+    ViewData["Title"] = "Добавить абонента";
+}
+<h2>Добавить абонента</h2>
+<form method="post">
+    <div class="mb-3"><label>Имя</label><input class="form-control" name="FirstName" required/></div>
+    <div class="mb-3"><label>Фамилия</label><input class="form-control" name="LastName" required/></div>
+    <div class="mb-3"><label>Телефон</label><input class="form-control" name="PhoneNumber" required/></div>
+    <div class="mb-3"><label>Адрес</label><input class="form-control" name="Address"/></div>
+    <div class="mb-3"><label>Категория</label><input class="form-control" name="Category"/></div>
+    <button class="btn btn-success" type="submit">Сохранить</button>
+    <a class="btn btn-secondary" href="/">Отмена</a>
+</form>

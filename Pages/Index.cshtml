@@ -1,0 +1,27 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Главная";
+}
+<h2>Контакты</h2>
+<form method="get" class="row g-2 mb-3">
+    <div class="col-md-2"><input class="form-control" name="FirstName" placeholder="Имя"/></div>
+    <div class="col-md-2"><input class="form-control" name="LastName" placeholder="Фамилия"/></div>
+    <div class="col-md-2"><input class="form-control" name="PhoneNumber" placeholder="Телефон"/></div>
+    <div class="col-md-2"><input class="form-control" name="Address" placeholder="Адрес"/></div>
+    <div class="col-md-2"><input class="form-control" name="Category" placeholder="Категория"/></div>
+    <div class="col-md-2"><button class="btn btn-primary w-100" type="submit">Поиск</button></div>
+</form>
+<p>
+    <a class="btn btn-success" href="/AddContact">Добавить абонента</a>
+    <a class="btn btn-secondary" href="/AddCategory">Добавить категорию</a>
+    <a class="btn btn-info text-white" href="/AddAdministrator">Добавить администратора</a>
+</p>
+<table class="table table-bordered">
+    <thead><tr><th>Имя</th><th>Фамилия</th><th>Телефон</th><th>Адрес</th><th>Категория</th><th>Действия</th></tr></thead>
+    <tbody>
+        <tr><td>Иван</td><td>Иванов</td><td>+71234567890</td><td>ул. Ленина</td><td>Общие</td>
+            <td><a class="btn btn-sm btn-warning" href="/EditContact">Редакт.</a> <a class="btn btn-sm btn-danger" href="#">Удалить</a></td>
+        </tr>
+    </tbody>
+</table>

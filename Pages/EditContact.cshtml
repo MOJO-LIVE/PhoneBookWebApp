@@ -1,0 +1,15 @@
+@page
+@model EditContactModel
+@{
+    ViewData["Title"] = "Редактировать абонента";
+}
+<h2>Редактировать абонента</h2>
+<form method="post">
+    <div class="mb-3"><label>Имя</label><input class="form-control" name="FirstName" value="Иван" required/></div>
+    <div class="mb-3"><label>Фамилия</label><input class="form-control" name="LastName" value="Иванов" required/></div>
+    <div class="mb-3"><label>Телефон</label><input class="form-control" name="PhoneNumber" value="+71234567890" required/></div>
+    <div class="mb-3"><label>Адрес</label><input class="form-control" name="Address" value="ул. Ленина"/></div>
+    <div class="mb-3"><label>Категория</label><input class="form-control" name="Category" value="Общие"/></div>
+    <button class="btn btn-primary" type="submit">Обновить</button>
+    <a class="btn btn-secondary" href="/">Отмена</a>
+</form>
